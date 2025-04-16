@@ -1,9 +1,10 @@
 #include<stdio.h>
 int main(){
-    int N;
-    
-    while (scanf("%d", &N) != EOF)
+    int X, N;
+    scanf("%d", &X);
+    for (int i = 0; i < X; i++)
     {
+        scanf("%d", &N);
         int factorial = 1;
         if (N == 0)
         {
@@ -15,9 +16,8 @@ int main(){
             }
         }
         printf("%d\n", factorial);
-        
-        
     }
+    
     
     return 0;
 }
