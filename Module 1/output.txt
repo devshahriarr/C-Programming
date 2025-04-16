@@ -1,0 +1,5 @@
+42 the summation is = 
+the substraction is = 38
+the summation is = 80
+the division is = 20
+the modulus is = 0
