@@ -5,7 +5,7 @@ int main(){
     for (int i = 0; i < X; i++)
     {
         scanf("%d", &N);
-        int factorial = 1;
+        long long int factorial = 1;
         if (N == 0)
         {
             factorial = 1;
@@ -15,7 +15,7 @@ int main(){
                 factorial = factorial*i;
             }
         }
-        printf("%d\n", factorial);
+        printf("%lld\n", factorial);
     }
     
     
