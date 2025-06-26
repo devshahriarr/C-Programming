@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n;
+    int n, is_palindrome = 1;
     scanf("%d", &n);
     int a[n];
 
@@ -10,22 +10,27 @@ int main()
         scanf("%d", &a[i]);
     }
 
-    int i = 0, j = n-1;
+    int i = 0, j = n - 1;
 
-    while (i<j)
+    while (i < j)
     {
-       
-        if (a[i] == a[j])
+
+        if (a[i] != a[j])
         {
-           printf("palindrome\n");
+            is_palindrome = 0;
+            break;
         }
 
-        i++, j-- ;
+        i++, j--;
     }
-    
-    for (int i = 0; i < n; i++)
-    {
 
-        printf("%d ", a[i]);
+    if (is_palindrome)
+    {
+        printf("palindrome\n");
     }
+    else
+    {
+        printf("Not palindrome\n");
+    }
+
 }
