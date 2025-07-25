@@ -2,16 +2,16 @@
 #include<string.h>
 #include<math.h>
 #include<limits.h>
-char small_to_capital(char character){
+int char_to_ascii(char character){
     
     // char character;
     if(character >= 'a' && character <= 'z'){
-        character = character - 32;
-        // printf("%c", character);
-        return character;
+        int new_character = character;
+        printf("%d", new_character);
+        return new_character;
     }else{
-        character = character + 32;
-        return character;
+        int new_character = character;
+        return new_character;
         // printf("%c", character);
     }
 }
@@ -19,8 +19,8 @@ int main(){
     char letter;
     scanf("%c", &letter);
 
-    char capital_letter = small_to_capital(letter);
-    printf("%c", capital_letter);
+    int capital_letter = char_to_ascii(letter);
+    printf("%d", capital_letter);
 
     // if(character >= 'a' && character <= 'z'){
     //     character = character - 32;
