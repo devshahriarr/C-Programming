@@ -1,0 +1,14 @@
+Enter Your Input: 
+Punctuation count: 1
+Total Parenthesis count: 8
+Total operator count: 5
+
+
+Keyword, Identifier and Constant found
+
+Total Keyword count: 2
+Keywords: int, Float
+Total Identifier count: 2
+Identifiers: ab, cd
+Total Constant count: 2
+Constants: -10.8, 12
